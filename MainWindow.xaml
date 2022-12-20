@@ -1,0 +1,42 @@
+﻿<Window x:Class="Mitya_plus_Kashkin_ravno_Saper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mitya_plus_Kashkin_ravno_Saper"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="CyberSapper" Height="640" Width="640" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Background="MediumOrchid">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35px">
+                
+            </RowDefinition>
+            <RowDefinition>
+                
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row = "0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition>
+                </ColumnDefinition>
+                <ColumnDefinition>
+                </ColumnDefinition>
+                <ColumnDefinition>
+                </ColumnDefinition>
+             </Grid.ColumnDefinitions> 
+            <Label x:Name = "timer" Content = "Время: 0" Background="Orchid" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderBrush="Purple" BorderThickness="3">
+            </Label>
+            <Button Grid.Column="1" x:Name = "refresh" Click="Refresh_OnClick" Width="35"  BorderBrush="Purple" BorderThickness="3">
+                <Image Source = "C:\Users\Felvo\RiderProjects\Mitya plus Kashkin ravno Saper\Mitya plus Kashkin ravno Saper\restart.png"> </Image>
+            </Button>
+            <Button Grid.Column="2" Content = "Настройки" x:Name = "settings" Click="Settings_OnClick" Background="Orchid" BorderBrush="Purple" BorderThickness="3"></Button>
+          
+           
+        </Grid>
+        <Grid x:Name = "Map" Grid.Row = "1" >
+        
+        </Grid>
+    </Grid>
+</Window>
